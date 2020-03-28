@@ -19,18 +19,18 @@ public class Assestment1 {
 		int [] page= new int[20];
 		long [] ISBN= new long[20];
 		
-		int count=0;
-		int i=0;
 		String nomore;
 		String temp;
-//Allowing the user to input the number of data's	
+		
+		int count=0;
+		int i=0;	
 
 //Currency format		
 		NumberFormat GBP = NumberFormat.getCurrencyInstance(Locale.UK);
-		
+//Allowing the user to input the number of data's		
 		do{
 //Prompting the user to store the further data's	
-			System.out.print("Do you want to store other data (Yes / Nomore): ");
+			System.out.print("Do you want to store further data (Yes / Nomore): ");
 			nomore=data.nextLine();
 			
 //If user inputs YES then			
@@ -86,7 +86,7 @@ public class Assestment1 {
 			}
 		}
 		
-		while (true);
+		while (i<20);
 		
 //In the case if user types Nomore then the output is displayed in the console	
 		count=i;
